@@ -1,0 +1,23 @@
+{
+  "name": "@workonika/functional",
+  "version": "1.0.0",
+  "description": "Apply functions to one data and return boolean; apply function to some data and return boolean.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "functional",
+    "or",
+    "and"
+  ],
+  "author": "Kuzmin Anton",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
+}

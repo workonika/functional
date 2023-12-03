@@ -76,4 +76,28 @@
 
     const [or, and] = ['some', 'every'].map((operation) => functionCreator(operation));
 
-    module.exports = { or, and };
+    const isEqualValues = (variable, values) => {
+        if (!Array.isArray(values)){
+            const type = typeof values;
+            const isObject = type === 'object';
+
+            throw new Error(`Second argument values of function isEqualValues must be ` + 
+                `an array, but it ${isObject ? 'has other object type' : 'is type ' + type}`);
+        }
+
+        return values.includes(variable);
+    };
+
+    const isEqualVariables = (value, variables) => {
+        if (!Array.isArray(values)){
+            const type = typeof values;
+            const isObject = type === 'object';
+
+            throw new Error(`Second argument values of function isEqualVariables must be ` + 
+                `an array, but it ${isObject ? 'has other object type' : 'is type ' + type}`);
+        }
+
+        return variables.includes(value);
+    };
+
+    module.exports = { or, and, isEqualValues, isEqualVariables };

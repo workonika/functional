@@ -1,15 +1,19 @@
 {
-  "name": "@workonika/functional",
-  "version": "1.0.0",
-  "description": "Apply functions to one data and return boolean; apply function to some data and return boolean.",
+  "name": "klumba",
+  "version": "1.1.0",
+  "description": "Library of functions for functional programming",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
-    "functional",
+    "functional programming",
     "or",
-    "and"
+    "and",
+    "copy",
+    "deep copy object array",
+    "equality object array",
+    "compare object array"
   ],
   "author": "Kuzmin Anton",
   "license": "ISC",
